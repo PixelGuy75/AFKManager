@@ -9,6 +9,7 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
+use pocketmine\permission\Permissible;
 
 class Main extends PluginBase implements Listener{
     
@@ -37,6 +38,6 @@ class Main extends PluginBase implements Listener{
 				return true;
                             }
                             break;
-                }    
 		}
-}
+    }
+?>
