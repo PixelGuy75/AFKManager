@@ -9,7 +9,6 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
-use pocketmine\permission\Permissible;
 
 class Main extends PluginBase implements Listener{
     
@@ -25,7 +24,6 @@ class Main extends PluginBase implements Listener{
 		switch($command->getName()){
 			case "afk":
                             $player = $this->getServer()->getPlayer($sender->getName());
-                            if ($player->hasPermission("afkplugin.afk")){
 				$this->getServer()->broadcastMessage($sender->getPlayer()->getDisplayName() . " is now AFK");
 				return true;
                             }
@@ -33,7 +31,6 @@ class Main extends PluginBase implements Listener{
                             
                         case "afkoff":
                             $player = $this->getServer()->getPlayer($sender->getName());
-                            if ($player->hasPermission("afkplugin.afkoff")){
 				$this->getServer()->broadcastMessage($sender->getPlayer()->getDisplayName() . " is no longer AFK");
 				return true;
                             }
