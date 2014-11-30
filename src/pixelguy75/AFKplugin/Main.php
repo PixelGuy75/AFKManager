@@ -25,7 +25,7 @@ class Main extends PluginBase implements Listener{
 			case "afk":
                             $player = $this->getServer()->getPlayer($sender->getName());
                             if ($player->hasPermission("afkplugin.afk")){
-				Server::getInstance()->broadcastMessage($sender->getPlayer()->getDisplayName() . " is now AFK");
+				$this->getServer()->broadcastMessage($sender->getPlayer()->getDisplayName() . " is now AFK");
 				return true;
                             }
                             break;
@@ -33,7 +33,7 @@ class Main extends PluginBase implements Listener{
                         case "afkoff":
                             $player = $this->getServer()->getPlayer($sender->getName());
                             if ($player->hasPermission("afkplugin.afkoff")){
-				Server::getInstance()->broadcastMessage($sender->getPlayer()->getDisplayName() . " is no longer AFK");
+				$this->getServer()->broadcastMessage($sender->getPlayer()->getDisplayName() . " is no longer AFK");
 				return true;
                             }
                             break;
