@@ -1,4 +1,4 @@
 AFKplugin
 =========
 
-Adds /afk and /afkoff commands
+Adds /afk and /afkoff commands for pocketmine servers.
