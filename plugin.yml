@@ -4,3 +4,20 @@ version: 1.0
 api: [1.3.0]
 author: PixelGuy75
 load: POSTWORLD
+commands:
+ afk:
+  description: Broadcasts that you are afk.
+  usage: "Usage: /afk"
+  permission: afkplugin.afk
+ afkoff:
+  description: Broadcasts that you are no longer afk.
+  usage: "Usage: /afkoff"
+  permission: afkplugin.afkoff
+permissions:
+ afkplugin.afk:
+  description: "Allows the user to be afk"
+  default: true
+ afkplugin.afkoff:
+  description: "Allows the user to not be afk"
+  default: true
+
