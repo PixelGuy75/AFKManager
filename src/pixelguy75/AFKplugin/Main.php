@@ -22,8 +22,8 @@ class Main extends PluginBase implements Listener{
 			case "afk":
                 $player = $this->getServer()->getPlayer($sender->getName());
                     if ($player->hasPermission("afkplugin.afk")){
-						$this->getServer()->broadcastMessage(TextFormat::GRAY . $sender->getPlayer()->getDisplayName() . " is now AFK");
-						return true;
+					$this->getServer()->broadcastMessage(TextFormat::GRAY . $sender->getPlayer()->getDisplayName() . " is now AFK");
+					return true;
                     }else{
                         $sender->sendMessage("Please run in-game!");
                     }
@@ -32,8 +32,8 @@ class Main extends PluginBase implements Listener{
             case "afkoff":
                 $player = $this->getServer()->getPlayer($sender->getName());
                     if ($player->hasPermission("afkplugin.afkoff")){
-						$this->getServer()->broadcastMessage(TextFormat::GRAY . $sender->getPlayer()->getDisplayName() . " is no longer AFK");
-						return true;
+					$this->getServer()->broadcastMessage(TextFormat::GRAY . $sender->getPlayer()->getDisplayName() . " is no longer AFK");
+					return true;
                     }else{
                         $sender->sendMessage("Please run in-game!");                              
                     }
