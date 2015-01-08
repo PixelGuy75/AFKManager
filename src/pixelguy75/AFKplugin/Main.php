@@ -25,7 +25,7 @@ class Main extends PluginBase implements Listener{
 				$this->getServer()->broadcastMessage(TextFormat::GRAY . $sender->getPlayer()->getDisplayName() . " is now AFK");
 				return true;
                             }else{
-                                $sender->sendMessage("Please run in-game!");
+                                $sender->sendMessage("You don't have permission");
                             }
                             break;
                             
@@ -35,7 +35,7 @@ class Main extends PluginBase implements Listener{
 				$this->getServer()->broadcastMessage(TextFormat::GRAY . $sender->getPlayer()->getDisplayName() . " is no longer AFK");
 				return true;
                             }else{
-                                $sender->sendMessage("Please run in-game!");                              
+                                $sender->sendMessage("You don't have permision!");                              
                             }
                             break;
                 }    
