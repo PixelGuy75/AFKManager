@@ -1,4 +1,4 @@
-AFKplugin
+AFKManager
 =========
 
-Adds /afk and /afkoff commands
+Allows players to broadcast if they are afk or not afk.
